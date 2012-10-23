@@ -10,7 +10,7 @@
 
 (function() {
 	// Load plugin specific language pack
-	tinymce.PluginManager.requireLangPack('example');
+	tinymce.PluginManager.requireLangPack('email');
 
 	tinymce.create('tinymce.plugins.EmailPlugin', {
 		/**
@@ -44,7 +44,7 @@
 
 			// Add a node change handler, selects the button in the UI when a image is selected
 			ed.onNodeChange.add(function(ed, cm, n) {
-				cm.setActive('example', n.nodeName == 'IMG');
+				cm.setActive('email', n.nodeName == 'IMG');
 			});
 		},
 
