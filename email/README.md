@@ -9,3 +9,10 @@ Installation
 ============
 
 Put the email folder into your `tinymce/plugins/` folder.
+
+Usage
+=====
+
+    plugins: "email",
+
+    theme_advanced_buttonsx: "email"
